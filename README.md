@@ -16,4 +16,4 @@
 	* string(create n keys when we have n users)
 		- key:user2-timestamp
 		- value:timestamp(the user last content's timestamp)
-	> the string timestamp is the best key;
+> the string timestamp is the best key;
