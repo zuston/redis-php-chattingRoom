@@ -1,10 +1,19 @@
-# redis-php-chattingRoom
-this is the simple demo which is based on the extension of the phpredis
+# Redis-php-chattingRoom
 
+**this is the simple demo which is based on the extension of phpredis and the nosql db of redis**
 
-
-## the introduction 
-好吧，不用英文了，掰扯了几句实在是词语匮乏，这个demo是使用phpredis扩展和redis.整个demo启动是index.php开始。
-
-###1.运行此demo需要配置phpredis和安装redis
-###2.redis数据结构:自己看RedisController吧，基本就相当于是学习redis的一个封装吧！没啥难度。
+## Introduction
+1. this demo depend on the phpredis and redis.you will have to be used
+2. the redis's structure is following
+	* hashmap(store the login username and password)
+		- key:login
+		- member:user1 or user2 or usern
+		- value:password
+	* sorted sets(create n keys when we have n users)
+		- key:user2-content(or user1-content)
+		- score:timestamp(the content createtime)
+		- value:content
+	* string(create n keys when we have n users)
+		- key:user2-timestamp
+		- value:timestamp(the user last content's timestamp)
+	> the string timestamp is the best key;
