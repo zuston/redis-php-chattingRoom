@@ -60,7 +60,7 @@
 			$.ajax({      
 			                type:"POST",      
 			                dataType:"json",      
-			                url:"data.php",      
+			                url:"index.php?listener=data",      
 			                timeout:40000,     //ajax请求超时时间80秒      
 			                data:{time:"80"}, //40秒后无论结果服务器都返回数据      
 			                success:function(data,textStatus){      
@@ -102,7 +102,7 @@
 				$.ajax({
 				type:"GET",      
 			    dataType:"json",      
-			    url:"content-submit.php",      
+			    url:"index.php",      
 			    timeout:10000,            //ajax请求超时时间80秒      
 			    data:{value:data}, //40秒后无论结果服务器都返回数据      
 			    success:function(data,textStatus){

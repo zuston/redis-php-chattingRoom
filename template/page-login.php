@@ -43,7 +43,7 @@
 												<img alt="Login" src="template/images/users/avatar-001.jpg">
 											</span>
 										</p>
-										<form class="form" action="login-check.php" method='get'>
+										<form class="form" action="index.php" method='get'>
 											<div class="form-group form-group-label">
 												<div class="row">
 													<div class="col-md-10 col-md-push-1">
